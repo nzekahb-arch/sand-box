@@ -219,7 +219,7 @@ export const CodeEditor: React.FC<CodeEditorProps> = ({
           <button
             type="button"
             onClick={() => setLabMenuOpen((prev) => !prev)}
-            className="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low hover:bg-surface-container rounded-md text-[13px] text-on-surface font-semibold border border-outline-variant/50 transition-colors cursor-pointer"
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low hover:bg-surface-container rounded-md text-[13px] text-on-surface font-semibold border border-outline-variant/50 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-container focus-visible:ring-offset-2"
           >
             <Terminal className="w-4 h-4 text-primary" />
             <span>Python 3.11</span>
@@ -284,7 +284,7 @@ export const CodeEditor: React.FC<CodeEditorProps> = ({
           <button
             type="button"
             onClick={onReset}
-            className="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg text-[13px] font-medium border border-outline-variant/50 transition-colors cursor-pointer"
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg text-[13px] font-medium border border-outline-variant/50 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-container focus-visible:ring-offset-2"
           >
             <RotateCcw className="w-3.5 h-3.5 text-on-surface-variant" />
             <span>Reset</span>
@@ -293,7 +293,7 @@ export const CodeEditor: React.FC<CodeEditorProps> = ({
           <button
             type="button"
             onClick={handleSaveClick}
-            className="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg text-[13px] font-medium border border-outline-variant/50 transition-colors cursor-pointer"
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg text-[13px] font-medium border border-outline-variant/50 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-container focus-visible:ring-offset-2"
           >
             {justSaved ? (
               <Check className="w-3.5 h-3.5 text-emerald-600" />
@@ -307,7 +307,7 @@ export const CodeEditor: React.FC<CodeEditorProps> = ({
             type="button"
             onClick={onRun}
             disabled={isRunning}
-            className="flex items-center gap-1.5 px-4 py-1.5 bg-primary-container hover:bg-primary disabled:opacity-75 text-on-primary rounded-lg text-[13px] font-semibold transition-all active:scale-95 cursor-pointer"
+            className="flex items-center gap-1.5 px-4 py-1.5 bg-primary-container hover:bg-primary disabled:bg-slate-600 disabled:text-white disabled:cursor-not-allowed text-on-primary rounded-lg text-[13px] font-semibold transition-all active:scale-95 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-container focus-visible:ring-offset-2"
           >
             <Play className={`w-3.5 h-3.5 fill-current ${isRunning ? 'animate-pulse' : ''}`} />
             <span>{isRunning ? 'Running...' : 'Run Code'}</span>

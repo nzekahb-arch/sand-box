@@ -58,7 +58,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         type="button"
         aria-current={isActive ? 'page' : undefined}
         onClick={() => handleSelect(item.id)}
-        className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-[13px] transition-colors cursor-pointer ${
+        className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-[13px] transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-container focus-visible:ring-offset-1 ${
           isActive
             ? 'bg-primary-container text-on-primary font-semibold'
             : 'font-medium text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface'

@@ -238,7 +238,7 @@ export const TelemetryPanel: React.FC<TelemetryPanelProps> = ({
             <button
               type="button"
               onClick={onRestartSim}
-              className="flex-1 py-1.5 px-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container border border-outline-variant/60 text-[13px] text-on-surface font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+              className="flex-1 py-1.5 px-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container border border-outline-variant/60 text-[13px] text-on-surface font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-container focus-visible:ring-offset-2"
             >
               <RotateCcw className="w-3.5 h-3.5" />
               <span>Restart Sim</span>
@@ -247,7 +247,7 @@ export const TelemetryPanel: React.FC<TelemetryPanelProps> = ({
               type="button"
               onClick={onStepForward}
               disabled={!result.success || totalSteps <= 1}
-              className="flex-1 py-1.5 px-3 rounded-lg bg-secondary hover:bg-secondary-container disabled:opacity-50 text-on-secondary text-[13px] font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+              className="flex-1 py-1.5 px-3 rounded-lg bg-secondary hover:bg-secondary-container disabled:bg-slate-200 disabled:text-slate-600 disabled:cursor-not-allowed text-on-secondary text-[13px] font-semibold flex items-center justify-center gap-1.5 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
             >
               <Redo2 className="w-3.5 h-3.5" />
               <span>Step (dt=0.1s)</span>
