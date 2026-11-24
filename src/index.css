@@ -1,22 +1,29 @@
 @import "tailwindcss";
 
 @theme {
+  /* 60% Dominant Neutral Surfaces */
   --color-surface: #f7f9fb;
   --color-surface-dim: #d8dadc;
   --color-surface-bright: #f7f9fb;
   --color-surface-container-lowest: #ffffff;
+  --color-background: #f7f9fb;
+  --color-on-background: #191c1e;
+
+  /* 30% Secondary Structural Panels & Borders */
   --color-surface-container-low: #f2f4f6;
   --color-surface-container: #eceef0;
   --color-surface-container-high: #e6e8ea;
   --color-surface-container-highest: #e0e3e5;
+  --color-surface-variant: #e0e3e5;
   --color-on-surface: #191c1e;
   --color-on-surface-variant: #434655;
   --color-inverse-surface: #2d3133;
   --color-inverse-on-surface: #eff1f3;
-  --color-outline: #747686;
+  --color-outline: #525565;
   --color-outline-variant: #c4c5d7;
   --color-surface-tint: #2151da;
 
+  /* 10% Accent & High-Emphasis Interactive Actions */
   --color-primary: #0037b0;
   --color-on-primary: #ffffff;
   --color-primary-container: #1d4ed8;
